@@ -1,0 +1,45 @@
+body {
+    accent-color: #00796b;
+    font-family: "Roboto Slab", Slab;
+    background: #eceff1;
+}
+
+#content {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 900px;
+}
+
+h1 {
+    color: #00251a;
+}
+
+a {
+    color: #00796b;
+}
+
+a:hover {
+    color: #48a999;
+}
+
+#navbar {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    text-align: center;
+    overflow: hidden;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 16px;
+    float: left;
+}
+
+#profilepic {
+    float: right;
+    width: 300px;
+    max-width: 100%;
+    margin-bottom: 18px;
+}
