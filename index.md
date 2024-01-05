@@ -8,8 +8,8 @@ Hi there! I'm a Bachelor student of Computer Science at [MFF UK](https://mff.cun
 
 In my spare time, I also help organise [Kasiopea](https://kasiopea.matfyz.cz/uvod/).
 
-For more info, take a look at my CV, either in [czech](https://github.com/furadnik/cv/releases/download/latest/uradnik_cv_cz.pdf)
-or [english](https://github.com/furadnik/cv/releases/download/latest/uradnik_cv_en.pdf).
+For more info, take a look at my CV, either in [Czech](https://github.com/furadnik/cv/releases/download/latest/uradnik_cv_cz.pdf)
+or [English](https://github.com/furadnik/cv/releases/download/latest/uradnik_cv_en.pdf).
 
 ## Contact me:
 * [Matrix](https://matrix.to/#/@furadnik:matrix.org)
