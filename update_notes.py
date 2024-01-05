@@ -51,7 +51,7 @@ lang: en
 ---
 Here are some of my notes.
 They are mostly in Czech.
-They're written in TeX, and the source code can be found [here]({GIT_URL}/bc_lec).
+They're written in $\\LaTeX{{}}$, and the source code can be found [here]({GIT_URL}/bc_lec).
 There are many mistakes in them, so be careful.
 
 If you find a mistake, either write me a message, or [create an issue]({GIT_URL}/-/issues/new).
