@@ -9,7 +9,7 @@ notes.md:
 
 $(PAGES): %.html: %.md $(VENV)
 	pandoc "$<" \
-		--katex \
+		--katex=https://cdn.jsdelivr.net/npm/katex/dist/ \
 		--html-q-tags \
 		--standalone \
 		--css=style.css \
