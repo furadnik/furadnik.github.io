@@ -1,7 +1,7 @@
 body {
     accent-color: #00796b;
-    font-family: "Roboto Slab", Slab;
-    background: #eceff1;
+    font-family: Verdana, Geneva, sans-serif;
+    background: #fafbfc;
 }
 
 #content {
@@ -38,8 +38,17 @@ a:hover {
 }
 
 #profilepic {
-    float: right;
-    width: 300px;
-    max-width: 100%;
+    width: 100%;
+    max-width: 300px;
     margin-bottom: 18px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 768px) {
+    #profilepic {
+        float: right;
+        margin: 0;
+    }
 }
