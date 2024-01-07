@@ -41,7 +41,7 @@ class GitSync:
 
 GIT_URL = "https://gitlab.mff.cuni.cz/uradnikf/bc_lec"
 BC_NOTES_GIT = GitSync(GIT_URL)
-BC_NOTES_URL = f"{GIT_URL}/-/raw/master/{{semester_code}}/{{subject}}/main.pdf"
+BC_NOTES_URL = f"{GIT_URL}/-/jobs/artifacts/master/file/out/{{semester_code}}_{{subject}}.pdf?job=build"
 SEMESTER_FORMAT = "* {year_from}/{year_to} {semester_type}\n\n{subjects}\n\n"
 OUTPUT_PATH = Path("notes.md")
 TEMPLATE = f"""
