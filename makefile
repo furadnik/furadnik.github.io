@@ -33,7 +33,7 @@ $(PAGES): $(OUT)/%.html: %.md $(VENV) $(KATEX_OUT)
 		--katex=$(KATEX_PATH) \
 		--html-q-tags \
 		--standalone \
-		--css=style.css \
+		--css=/style.css \
 		--include-before-body=base_before.html \
 		--include-after-body=base_after.html \
 		--metadata title-prefix="Filip Úradník" \
