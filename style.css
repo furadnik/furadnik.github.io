@@ -27,6 +27,8 @@ a:hover {
 #navbar {
     margin-left: auto;
     margin-right: auto;
+    padding-left: 18px;
+    padding-right: 18px;
     max-width: var(--max-width);
     text-align: center;
     overflow: hidden;
