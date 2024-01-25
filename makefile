@@ -9,7 +9,7 @@ all: $(PAGES)
 notes.md:
 	./update_notes.py
 
-$(KATEX): $(OUT)$(KATEX_PATH)/%:
+$(KATEX): $(OUT)$(KATEX_PATH)%:
 	mkdir -p "$$(dirname "$@")"
 	curl -L "https://cdn.jsdelivr.net/npm/katex/dist/$%" > "$@"
 
