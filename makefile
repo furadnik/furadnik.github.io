@@ -1,6 +1,6 @@
 OUT=site
 PAGES=index.html notes.html
-STATIC=$(shell find data -type f) style.css
+STATIC=$(shell find data -type f) style.css favicon.ico
 OUT_PAGES=$(addprefix $(OUT)/,$(PAGES))
 OUT_STATIC=$(addprefix $(OUT)/,$(STATIC))
 
