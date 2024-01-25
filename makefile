@@ -1,10 +1,14 @@
-PAGES=index.html notes.html
-ALL_ENTRIES=$(PAGES) data style.css
 OUT=site
+PAGES=$(OUT)/index.html $(OUT)/notes.html
+STATIC=data/* style.css
 KATEX_PATH=/data/katex/
 KATEX=$(OUT)$(KATEX_PATH)katex.min.css $(OUT)$(KATEX_PATH)katex.min.js
 
-all: $(PAGES)
+all: $(PAGES) $(STATIC)
+
+$(STATIC): %:
+	mkdir -p "$$(dirname "$(OUT)/$@")"
+	cp -r "$@" "$(OUT)/$@"
 
 notes.md:
 	./update_notes.py
@@ -13,7 +17,7 @@ $(KATEX): $(OUT)$(KATEX_PATH)%:
 	mkdir -p "$$(dirname "$@")"
 	curl -L "https://cdn.jsdelivr.net/npm/katex/dist/$*" > "$@"
 
-$(PAGES): %.html: %.md $(VENV) $(KATEX)
+$(PAGES): $(OUT)/%.html: %.md $(VENV) $(KATEX)
 	pandoc "$<" \
 		--katex=$(KATEX_PATH) \
 		--html-q-tags \
@@ -25,13 +29,8 @@ $(PAGES): %.html: %.md $(VENV) $(KATEX)
 		--metadata author-meta="Filip Úradník" \
 		--output "$@"
 
-copy_out: all
-	rm -rf $(OUT)
-	mkdir -p $(OUT)
-	cp -r $(ALL_ENTRIES) $(OUT)
-
 clean:
-	rm -rf $(PAGES)
+	rm -rf $(OUT)
 	rm -rf notes.md
 
 upload: all

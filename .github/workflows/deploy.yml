@@ -36,7 +36,7 @@ jobs:
         id: pages
         uses: actions/configure-pages@v4
       - name: Build the website
-        run: make OUT=./site copy_out
+        run: make OUT=./site all
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
