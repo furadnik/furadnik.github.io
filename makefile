@@ -1,15 +1,21 @@
 PAGES=index.html notes.html
 ALL_ENTRIES=$(PAGES) data style.css
 OUT=site
+KATEX_PATH=/data/katex
+KATEX=$(OUT)$(KATEX_PATH)/katex.min.css $(OUT)$(KATEX_PATH)/katex.min.js
 
 all: $(PAGES)
 
 notes.md:
 	./update_notes.py
 
-$(PAGES): %.html: %.md $(VENV)
+$(KATEX): $(OUT)$(KATEX_PATH)/%:
+	mkdir -p "$$(dirname "$@")"
+	curl -L "https://cdn.jsdelivr.net/npm/katex/dist/$%" > "$@"
+
+$(PAGES): %.html: %.md $(VENV) $(KATEX)
 	pandoc "$<" \
-		--katex=https://cdn.jsdelivr.net/npm/katex/dist/ \
+		--katex=$(KATEX_PATH) \
 		--html-q-tags \
 		--standalone \
 		--css=style.css \
