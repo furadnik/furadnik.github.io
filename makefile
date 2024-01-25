@@ -11,7 +11,7 @@ notes.md:
 
 $(KATEX): $(OUT)$(KATEX_PATH)%:
 	mkdir -p "$$(dirname "$@")"
-	curl -L "https://cdn.jsdelivr.net/npm/katex/dist/$%" > "$@"
+	curl -L "https://cdn.jsdelivr.net/npm/katex/dist/$*" > "$@"
 
 $(PAGES): %.html: %.md $(VENV) $(KATEX)
 	pandoc "$<" \
