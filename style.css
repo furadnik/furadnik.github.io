@@ -27,9 +27,7 @@ a:hover {
 #navbar {
     margin-left: auto;
     margin-right: auto;
-    padding-left: 18px;
-    padding-right: 18px;
-    padding-bottom: 9px;
+    padding-bottom: 18px;
     max-width: var(--max-width);
     text-align: center;
     overflow: hidden;
@@ -37,7 +35,7 @@ a:hover {
 
 #navbar li {
     list-style: none;
-    padding: 9px;
+    padding: 9px 18px 9px 18px;
     float: left;
 }
 
