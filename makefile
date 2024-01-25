@@ -1,8 +1,8 @@
 PAGES=index.html notes.html
 ALL_ENTRIES=$(PAGES) data style.css
 OUT=site
-KATEX_PATH=/data/katex
-KATEX=$(OUT)$(KATEX_PATH)/katex.min.css $(OUT)$(KATEX_PATH)/katex.min.js
+KATEX_PATH=/data/katex/
+KATEX=$(OUT)$(KATEX_PATH)katex.min.css $(OUT)$(KATEX_PATH)katex.min.js
 
 all: $(PAGES)
 
