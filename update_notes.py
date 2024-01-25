@@ -103,7 +103,7 @@ def format_semester(semester: str, subjects: Iterable[tuple[str, str, bool]]) ->
     year, semester_type = unpack_semester_code(semester)
     formatted_subjects = "\n".join(
         f'  - [{subject_name}]({BC_NOTES_URL.format(semester_code=semester, subject=subject_code)})'
-        f'{" [In English]" if subject_english else ""}'
+        f'{" [In&nbsp;English]" if subject_english else ""}'
         for subject_code, subject_name, subject_english in sorted(subjects, key=lambda x: x[1])
     )
     if not formatted_subjects:
