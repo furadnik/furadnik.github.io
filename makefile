@@ -19,10 +19,11 @@ notes.md:
 
 $(OUT_KATEX): %:
 	mkdir -p katex_tmp
-	curl -L "https://github.com/KaTeX/KaTeX/releases/latest/download/katex.tar.gz" > katex_tmp/katex.tar.gz
-	cd katex_tmp && tar -xzf katex.tar.gz $(KATEX_MEMBERS)
 	rm -rf "$(OUT_KATEX)" || echo "didn't exits"
 	mkdir -p "$(OUT_KATEX)"
+	cd katex_tmp && \
+		curl -L "https://github.com/KaTeX/KaTeX/releases/latest/download/katex.tar.gz" | \
+		tar -xzf - $(KATEX_MEMBERS)
 	cp -rf -- $(addprefix katex_tmp/,$(KATEX_MEMBERS)) "$(OUT_KATEX)"
 	rm -rf katex_tmp
 
