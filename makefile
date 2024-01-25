@@ -1,34 +1,36 @@
 OUT=site
-PAGES=$(OUT)/index.html $(OUT)/notes.html
+PAGES=index.html notes.html
 STATIC=$(shell find data -type f) style.css
+OUT_PAGES=$(addprefix $(OUT)/,$(PAGES))
+OUT_STATIC=$(addprefix $(OUT)/,$(STATIC))
 
 KATEX_PATH=/data/katex/
-KATEX_OUT=$(OUT)$(KATEX_PATH)
+OUT_KATEX=$(OUT)$(KATEX_PATH)
 KATEX_MEMBERS=katex/katex.min.css katex/katex.min.js katex/fonts
 
-all: $(PAGES) $(STATIC)
+all: $(OUT_PAGES) $(OUT_STATIC)
 
-$(STATIC): %:
-	mkdir -p "$$(dirname "$(OUT)/$@")"
-	cp -r "$@" "$(OUT)/$@"
+$(OUT_STATIC): $(OUT)/%:
+	mkdir -p "$$(dirname "$@")"
+	cp -r "$*" "$@"
 
 notes.md:
 	./update_notes.py
 
-$(KATEX_OUT): %:
+$(OUT_KATEX): %:
 	mkdir -p katex_tmp
 	curl -L "https://github.com/KaTeX/KaTeX/releases/latest/download/katex.tar.gz" > katex_tmp/katex.tar.gz
 	cd katex_tmp && tar -xzf katex.tar.gz $(KATEX_MEMBERS)
-	rm -rf "$(KATEX_OUT)" || echo "didn't exits"
-	mkdir -p "$(KATEX_OUT)"
-	cp -rf -- $(addprefix katex_tmp/,$(KATEX_MEMBERS)) "$(KATEX_OUT)"
+	rm -rf "$(OUT_KATEX)" || echo "didn't exits"
+	mkdir -p "$(OUT_KATEX)"
+	cp -rf -- $(addprefix katex_tmp/,$(KATEX_MEMBERS)) "$(OUT_KATEX)"
 	rm -rf katex_tmp
 
 $(KATEX): $(OUT)$(KATEX_PATH)%:
 	mkdir -p "$$(dirname "$@")"
 	curl -L "https://cdn.jsdelivr.net/npm/katex/dist/$*" > "$@"
 
-$(PAGES): $(OUT)/%.html: %.md $(VENV) $(KATEX_OUT)
+$(OUT_PAGES): $(OUT)/%.html: %.md $(VENV) $(OUT_KATEX)
 	pandoc "$<" \
 		--katex=$(KATEX_PATH) \
 		--html-q-tags \
