@@ -1,6 +1,6 @@
 OUT=site
 PAGES=$(OUT)/index.html $(OUT)/notes.html
-STATIC=data/* style.css
+STATIC=$(shell find data -type f) style.css
 KATEX_PATH=/data/katex/
 KATEX=$(OUT)$(KATEX_PATH)katex.min.css $(OUT)$(KATEX_PATH)katex.min.js
 
