@@ -1,4 +1,3 @@
-#!/usr/bin/python
 """Update web files."""
 from os import system
 from pathlib import Path
@@ -43,20 +42,6 @@ GIT_URL = "https://gitlab.mff.cuni.cz/uradnikf/bc_lec"
 BC_NOTES_GIT = GitSync(GIT_URL)
 BC_NOTES_URL = f"{GIT_URL}/-/jobs/artifacts/master/raw/out/{{semester_code}}_{{subject}}.pdf?job=build"
 SEMESTER_FORMAT = "* {year_from}/{year_to} {semester_type}\n\n{subjects}\n\n"
-OUTPUT_PATH = Path("notes.md")
-TEMPLATE = f"""
----
-pagetitle: Notes
-lang: en
----
-Here are some of my notes.
-They are mostly in Czech.
-They're written in $\\LaTeX{{}}$, their source code can be found [here]({GIT_URL}).
-There are (probably) many mistakes in them, so be careful.
-
-If you find a mistake, either write me a message, or [create an issue]({GIT_URL}/-/issues/new).
-
-"""
 
 
 def semester_value(semester_code: str) -> int:
@@ -112,15 +97,9 @@ def format_semester(semester: str, subjects: Iterable[tuple[str, str, bool]]) ->
                                   semester_type=semester_type, subjects=formatted_subjects)
 
 
-def update_bc_notes(output_file: Path = OUTPUT_PATH, template: str = TEMPLATE,
-                    notes: GitSync = BC_NOTES_GIT, notes_url: str = BC_NOTES_URL) -> None:
+def generate_notes(notes: GitSync = BC_NOTES_GIT, notes_url: str = BC_NOTES_URL) -> str:
     """Update the bc notes."""
     with notes as notes_dir:
         semesters = sorted(get_semesters(notes_dir), key=lambda x: semester_value(x[0]))
         formatted_semesters = "\n".join(format_semester(semester, subjects) for semester, subjects in semesters)
-    print(formatted_semesters)
-    output_file.write_text(template + formatted_semesters)
-
-
-if __name__ == '__main__':
-    update_bc_notes()
+    return formatted_semesters

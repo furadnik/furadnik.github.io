@@ -8,14 +8,19 @@ KATEX_PATH=/data/katex/
 OUT_KATEX=$(OUT)$(KATEX_PATH)
 KATEX_MEMBERS=katex/katex.min.css katex/katex.min.js katex/fonts
 
+VENV=.venv
+ACTIVATE=$(VENV)/bin/activate
+PYTHON=$(VENV)/bin/python
+
 all: $(OUT_PAGES) $(OUT_STATIC)
+
+$(ACTIVATE): %:
+	python -m venv $(VENV)
+	$(PYTHON) -m pip install -r requirements.txt
 
 $(OUT_STATIC): $(OUT)/%:
 	mkdir -p "$$(dirname "$@")"
 	cp -r "$*" "$@"
-
-notes.md:
-	./update_notes.py
 
 $(OUT_KATEX): %:
 	mkdir -p katex_tmp
@@ -31,8 +36,8 @@ $(KATEX): $(OUT)$(KATEX_PATH)%:
 	mkdir -p "$$(dirname "$@")"
 	curl -L "https://cdn.jsdelivr.net/npm/katex/dist/$*" > "$@"
 
-$(OUT_PAGES): $(OUT)/%.html: %.md $(VENV) $(OUT_KATEX)
-	pandoc "$<" \
+$(OUT_PAGES): $(OUT)/%.html: %.md $(ACTIVATE) $(OUT_KATEX)
+	cat "$<" | python -m preprocessors | pandoc - \
 		--katex=$(KATEX_PATH) \
 		--html-q-tags \
 		--standalone \
@@ -52,4 +57,4 @@ upload: all
 	web_upload 
 
 # I want the notes updated always, because they rely on online content.
-.PHONY: notes.md all copy_out
+.PHONY: all copy_out

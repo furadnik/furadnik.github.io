@@ -3,3 +3,4 @@ notes.md
 !base_{before,after}.html
 site
 .venv
+*.pyc
