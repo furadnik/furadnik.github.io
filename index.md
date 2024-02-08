@@ -11,7 +11,7 @@ In my spare time, I also help organise [Kasiopea](https://kasiopea.matfyz.cz/uvo
 For more info, take a look at&nbsp;my&nbsp;CV, either in&nbsp;[Czech](https://github.com/furadnik/cv/releases/download/latest/uradnik_cv_cz.pdf)
 or&nbsp;[English](https://github.com/furadnik/cv/releases/download/latest/uradnik_cv_en.pdf).
 
-## Contact me:
+## Contact me
 * [Matrix](https://matrix.to/#/@furadnik:matrix.org)
 * [School Email](mailto:uradnik@kam.mff.cuni.cz)
 * [Personal Email](mailto:filip.uradnik9@gmail.com)
