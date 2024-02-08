@@ -18,6 +18,6 @@ or&nbsp;[English](https://github.com/furadnik/cv/releases/download/latest/uradni
 
 ## Publications
 
-For more info, see [Google Scholar](https://scholar.google.com/citations?user=7AvTiqgAAAAJ).
+See my [Google Scholar](https://scholar.google.com/citations?user=7AvTiqgAAAAJ) profile.
 
 {{publications}}
