@@ -13,9 +13,11 @@ or&nbsp;[English](https://github.com/furadnik/cv/releases/download/latest/uradni
 
 ## Contact me:
 * [Matrix](https://matrix.to/#/@furadnik:matrix.org)
-* [School Email](mailto:filip.uradnik@mff.cuni.cz)
+* [School Email](mailto:uradnik@kam.mff.cuni.cz)
 * [Personal Email](mailto:filip.uradnik9@gmail.com)
 
-%% ## Publications
-%%
-%% {{publications}}
+## Publications
+
+For more info, see [Google Scholar](https://scholar.google.com/citations?user=7AvTiqgAAAAJ).
+
+{{publications}}
