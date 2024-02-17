@@ -1,8 +1,10 @@
 OUT=site
 PAGES=index.html notes.html
-STATIC=$(shell find data -type f) style.css favicon.ico
+STATIC=$(shell find data -type f) favicon.ico
+OTHER=style.css
 OUT_PAGES=$(addprefix $(OUT)/,$(PAGES))
 OUT_STATIC=$(addprefix $(OUT)/,$(STATIC))
+OUT_OTHER=$(addprefix $(OUT)/,$(OTHER))
 
 KATEX_PATH=/data/katex/
 OUT_KATEX=$(OUT)$(KATEX_PATH)
@@ -11,8 +13,9 @@ KATEX_MEMBERS=katex/katex.min.css katex/katex.min.js katex/fonts
 VENV=.venv
 ACTIVATE=$(VENV)/bin/activate
 PYTHON=$(VENV)/bin/python
+HUE=$(VENV)/bin/hue
 
-all: $(OUT_PAGES) $(OUT_STATIC)
+all: $(OUT_PAGES) $(OUT_STATIC) $(OUT_OTHER)
 
 $(ACTIVATE): %:
 	python -m venv $(VENV)
@@ -47,6 +50,15 @@ $(OUT_PAGES): $(OUT)/%.html: %.md $(ACTIVATE) $(OUT_KATEX)
 		--metadata title-prefix="Filip Úradník" \
 		--metadata author-meta="Filip Úradník" \
 		--output "$@"
+
+$(OUT)/style.css: $(ACTIVATE) style.css
+	cat style.css \
+		| sed 's/#00796b/$(shell $(HUE) .5)/' \
+		| sed 's/#48a999/$(shell $(HUE) .6 .6)/' \
+		| sed 's/#00251a/$(shell $(HUE) .15)/' \
+		| sed 's/#00796b/$(shell $(HUE) .47)/' \
+		| sed 's/#fafbfc/$(shell $(HUE) 1 .01)/' \
+		> $(OUT)/style.css
 
 clean:
 	rm -rf $(OUT) || echo "didn't exist"

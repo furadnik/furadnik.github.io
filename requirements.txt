@@ -1,2 +1,3 @@
 pandocfilters
 arxiv
+-e git+https://github.com/furadnik/yearly-hue#egg=yearly_hue
