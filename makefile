@@ -54,10 +54,10 @@ $(OUT_PAGES): $(OUT)/%.html: %.md $(ACTIVATE) $(OUT_KATEX)
 $(OUT)/style.css: $(ACTIVATE) style.css
 	cat style.css \
 		| sed 's/#00796b/$(shell $(HUE) .4)/' \
-		| sed 's/#48a999/$(shell $(HUE) .5 .6)/' \
+		| sed 's/#48a999/$(shell $(HUE) .5 .81)/' \
 		| sed 's/#00251a/$(shell $(HUE) .15)/' \
 		| sed 's/#00796b/$(shell $(HUE) .37)/' \
-		| sed 's/#fafbfc/$(shell $(HUE) 1 .01)/' \
+		| sed 's/#fafbfc/$(shell $(HUE) 1 .03)/' \
 		> $(OUT)/style.css
 
 clean:
