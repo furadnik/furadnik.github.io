@@ -57,7 +57,7 @@ $(OUT)/style.css: $(ACTIVATE) style.css
 		| sed 's/#48a999/$(shell $(HUE) .5 .81)/' \
 		| sed 's/#00251a/$(shell $(HUE) .15)/' \
 		| sed 's/#00796b/$(shell $(HUE) .37)/' \
-		| sed 's/#fafbfc/$(shell $(HUE) 1 .03)/' \
+		| sed 's/#fafbfc/$(shell $(HUE) 1 .018)/' \
 		> $(OUT)/style.css
 
 clean:
