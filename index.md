@@ -10,7 +10,7 @@ or&nbsp;[English](https://github.com/furadnik/cv/releases/download/latest/uradni
 
 ## Contact me
 
-My office in the CoRE building, room 434.
+My office is in the CoRE building, room 434.
 
 You can also send me an [email](mailto:uradnik@kam.mff.cuni.cz) or&nbsp;contact me on [Matrix](https://matrix.to/#/@furadnik:matrix.org).
 
