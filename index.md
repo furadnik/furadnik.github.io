@@ -20,7 +20,7 @@ _I am currently attending the [Research Experience for Undergraduates](https://r
 >>>>>>> 856ed63 (feat: make project more visible)
 ## Contact me
 
-My office in the CoRE building, room 434.
+My office is in the CoRE building, room 434.
 
 You can also send me an [email](mailto:uradnik@kam.mff.cuni.cz) or&nbsp;contact me on [Matrix](https://matrix.to/#/@furadnik:matrix.org).
 
