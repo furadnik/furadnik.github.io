@@ -6,20 +6,23 @@ nocite: '@*'
 ---
 <div id="profilepic_div"><img id="profilepic" src="data/profile_pic.jpg"/></div>
 # Filip&nbsp;Úradník
-Hi there! I'm a Bachelor student of Computer Science at&nbsp;[MFF&nbsp;UK](https://mff.cuni.cz/).
+I'm a Bachelor student of Computer Science at&nbsp;[MFF&nbsp;UK](https://mff.cuni.cz/).
+For more info about me, take a look at&nbsp;my&nbsp;CV, either in&nbsp;[Czech](https://github.com/furadnik/cv/releases/download/latest/uradnik_cv_cz.pdf)
+or&nbsp;[English](https://github.com/furadnik/cv/releases/download/latest/uradnik_cv_en.pdf), or&nbsp;visit my&nbsp;[personal&nbsp;website](https://furadnik.github.io/).
 
-In my spare time, I also help organise [Kasiopea](https://kasiopea.matfyz.cz/uvod/).
-
-For more info, take a look at&nbsp;my&nbsp;CV, either in&nbsp;[Czech](https://github.com/furadnik/cv/releases/download/latest/uradnik_cv_cz.pdf)
-or&nbsp;[English](https://github.com/furadnik/cv/releases/download/latest/uradnik_cv_en.pdf).
+I work on _Truth Learning in a Social and Adversarial Setting_ with [Julia Križanová](https://reu.dimacs.rutgers.edu/~jk2238/), [Rhett Olson](https://reu.dimacs.rutgers.edu/~ro330/) and [Amanda Wang](https://reu.dimacs.rutgers.edu/~aw1115/).
+Our mentor is professor [Jie Gao](https://sites.rutgers.edu/jie-gao/about/).
 
 _I am currently attending the [Research Experience for Undergraduates](https://reu.dimacs.rutgers.edu/) program at Rutgers University. See the [details of my project](https://reu.dimacs.rutgers.edu/~fu37/)._
 
 ## Contact me
-* [Matrix](https://matrix.to/#/@furadnik:matrix.org)
-* [School Email](mailto:uradnik@kam.mff.cuni.cz)
-* [Personal Email](mailto:filip.uradnik9@gmail.com)
 
-## Publications
+My office in the CoRE building, room 434.
 
-See my [Google Scholar](https://scholar.google.com/citations?user=7AvTiqgAAAAJ) profile.
+You can also send me an [email](mailto:uradnik@kam.mff.cuni.cz) or&nbsp;contact me on [Matrix](https://matrix.to/#/@furadnik:matrix.org).
+
+## Acknowledgements
+
+
+<div id="eu_div"><img id="eu" src="data/eu.png"/></div>
+This project has received funding from the European Union’s Horizon 2020 research and innovation programme under the Marie Skłodowska-Curie grant agreement No 823748.

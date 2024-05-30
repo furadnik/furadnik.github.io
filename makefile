@@ -1,6 +1,6 @@
 CITEPROC=--citeproc
 OUT=site
-PAGES=index.html notes.html
+PAGES=index.html
 STATIC=$(shell find data -type f) favicon.ico
 OTHER=style.css
 OUT_PAGES=$(addprefix $(OUT)/,$(PAGES))
@@ -42,7 +42,7 @@ $(OUT_PAGES): $(OUT)/%.html: %.md $(ACTIVATE) $(OUT_KATEX)
 		--katex=$(KATEX_PATH)/ \
 		--html-q-tags \
 		--standalone \
-		--css=/style.css \
+		--css=style.css \
 		--include-before-body=base_before.html \
 		--include-after-body=base_after.html \
 		--metadata title-prefix="Filip Úradník" \
