@@ -29,8 +29,14 @@ You can also send me an [email](mailto:uradnik@kam.mff.cuni.cz) or&nbsp;contact 
 At [REU 2024](https://reu.dimacs.rutgers.edu/2024/), I work on _Truth Learning in a Social and Adversarial Setting_ with&nbsp;[Julia Križanová](https://reu.dimacs.rutgers.edu/~jk2238/), [Rhett Olson](https://reu.dimacs.rutgers.edu/~ro330/), and&nbsp;[Amanda&nbsp;Wang](https://reu.dimacs.rutgers.edu/~aw1115/).
 Our mentor is professor [Jie Gao](https://sites.rutgers.edu/jie-gao/about/).
 
-## Acknowledgements
+## Week log
 
+* _Week 1_: 05/29 --- 06/02
+    - I did research about information cascades and voting.
+    - I created a website for this project.
+    - I started working on the initial presentation for our project.
+
+## Acknowledgements
 
 <div id="eu_div"><img id="eu" src="data/eu.png"/></div>
 This project has received funding from the European Union’s Horizon 2020 research and innovation programme under the Marie Skłodowska-Curie grant agreement No 823748.
