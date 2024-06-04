@@ -27,7 +27,7 @@ You can also send me an [email](mailto:uradnik@kam.mff.cuni.cz) or&nbsp;contact 
 # Truth Learning in Social and Adversarial Setting
 
 At [REU 2024](https://reu.dimacs.rutgers.edu/2024/), I work on _Truth Learning in a Social and Adversarial Setting_ with&nbsp;[Julia Križanová](https://reu.dimacs.rutgers.edu/~jk2238/), [Rhett Olson](https://reu.dimacs.rutgers.edu/~ro330/), and&nbsp;[Amanda&nbsp;Wang](https://reu.dimacs.rutgers.edu/~aw1115/).
-Our mentor is professor [Jie Gao](https://sites.rutgers.edu/jie-gao/about/).
+Our mentor is Professor [Jie Gao](https://sites.rutgers.edu/jie-gao/about/).
 
 ## Week log
 
