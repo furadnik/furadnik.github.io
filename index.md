@@ -32,9 +32,20 @@ Our mentor is Professor [Jie Gao](https://sites.rutgers.edu/jie-gao/about/).
 ## Week log
 
 * _Week 1_: 05/29 --- 06/02
-    - I did research about information cascades and voting.
+    - I did research about information cascades and voting. [[2](#2)]
     - I created a website for this project.
-    - I started working on the initial presentation for our project.
+    - I started working on the [initial presentation](data/initial_prez.pdf) of the project.
+
+* _Week 2_: 06/03 --- 06/09
+    - We have finished and given the [initial presentation](data/initial_prez.pdf).
+    - I have read a paper about complexity of a decision process in a similar model to ours. [[1](#1)]
+
+## References
+
+1. <div id="1"></div> Hązła, J., Jadbabaie, A., Mossel, E., & Rahimian, M. A. (2019, June). _Reasoning in Bayesian opinion exchange networks is PSPACE-hard_. In _Conference on Learning Theory_ (pp. 1614-1648). PMLR. [[PMLR]](https://proceedings.mlr.press/v99/hazla19a.html)
+2. <div id="2"></div> Easley, D., & Kleinberg, J. (2010). Networks, crowds, and markets: Reasoning about a highly connected world (Vol. 1). Cambridge: Cambridge university press. [[Cornell]](https://www.cs.cornell.edu/home/kleinber/networks-book/)
+
+
 
 ## Acknowledgements
 
