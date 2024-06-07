@@ -41,6 +41,7 @@ $(KATEX): $(OUT)$(KATEX_PATH)%:
 
 $(OUT_PAGES): $(OUT)/%.html: %.md $(ACTIVATE) $(OUT_KATEX)
 	cat "$<" | python -m preprocessors | pandoc - \
+		--citeproc \
 		--katex=$(KATEX_PATH) \
 		--html-q-tags \
 		--standalone \
