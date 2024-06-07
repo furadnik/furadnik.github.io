@@ -1,3 +1,4 @@
+CITEPROC=--citeproc
 OUT=site
 PAGES=index.html notes.html
 STATIC=$(shell find data -type f) favicon.ico
@@ -41,7 +42,7 @@ $(KATEX): $(OUT)$(KATEX_PATH)%:
 
 $(OUT_PAGES): $(OUT)/%.html: %.md $(ACTIVATE) $(OUT_KATEX)
 	cat "$<" | python -m preprocessors | pandoc - \
-		--citeproc \
+		$(CITEPROC) \
 		--katex=$(KATEX_PATH) \
 		--html-q-tags \
 		--standalone \
