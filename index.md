@@ -1,6 +1,8 @@
 ---
 pagetitle: Home
 lang: en
+bibliography: my_papers.bib
+nocite: '@*'
 ---
 <div id="profilepic_div"><img id="profilepic" src="data/profile_pic.jpg"/></div>
 # Filip&nbsp;Úradník
