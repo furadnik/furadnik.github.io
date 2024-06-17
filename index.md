@@ -33,6 +33,7 @@ You can also send me an [email](mailto:uradnik@kam.mff.cuni.cz) or&nbsp;contact 
 
 At [REU 2024](https://reu.dimacs.rutgers.edu/2024/), I work on _Truth Learning in a Social and Adversarial Setting_ with&nbsp;[Julia Križanová](https://reu.dimacs.rutgers.edu/~jk2238/), [Rhett Olson](https://reu.dimacs.rutgers.edu/~ro330/), and&nbsp;[Amanda&nbsp;Wang](https://reu.dimacs.rutgers.edu/~aw1115/).
 Our mentor is Professor [Jie Gao](https://sites.rutgers.edu/jie-gao/about/).
+We further collaborate with [Kevin Lu](https://www.math.rutgers.edu/people/department-directory/detail/344-department-directory/1983-lu-kevin).
 
 ## Week log
 
@@ -44,6 +45,13 @@ Our mentor is Professor [Jie Gao](https://sites.rutgers.edu/jie-gao/about/).
 * _Week 2_: 06/03 --- 06/09
     - We have finished and given the [initial presentation](data/initial_prez.pdf).
     - I have read a paper about complexity of a decision process in a similar model to ours [@hazla2019reasoning].
+    - We have discussed a statement of a complexity problem regarding optimal learning order.
+    - I have started to work on a proof of the complexity problem regarding optimal learning order.
+
+* _Week 3_: 06/10 --- 06/16
+    - We have discussed the proof of the complexity problem of deciding the optimal learning order with Kevin Lu.
+    - I have started to work on a new problem concerning the comparison of Bayesian and Majority models.
+    - We have further discussed adversarial approaches to the sequential learning setting.
 
 ## Acknowledgements
 
