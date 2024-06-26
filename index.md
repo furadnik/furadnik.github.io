@@ -1,5 +1,5 @@
 ---
-pagetitle: Home
+pagetitle: REU 2024
 lang: en
 <<<<<<< HEAD
 bibliography: my_papers.bib
@@ -34,6 +34,28 @@ You can also send me an [email](mailto:uradnik@kam.mff.cuni.cz) or&nbsp;contact 
 At [REU 2024](https://reu.dimacs.rutgers.edu/2024/), I work on _Truth Learning in a Social and Adversarial Setting_ with&nbsp;[Julia Križanová](https://reu.dimacs.rutgers.edu/~jk2238/), [Rhett Olson](https://reu.dimacs.rutgers.edu/~ro330/), and&nbsp;[Amanda&nbsp;Wang](https://reu.dimacs.rutgers.edu/~aw1115/).
 Our mentor is Professor [Jie Gao](https://sites.rutgers.edu/jie-gao/about/).
 We further collaborate with [Kevin Lu](https://www.math.rutgers.edu/people/department-directory/detail/344-department-directory/1983-lu-kevin).
+
+## Project Description
+
+Let $G = \left( V,E \right)$ be a directed multigraph representing a network of $n := |V|$ agents.
+Let $q \in (0,1)$ and $p \in (\frac 12, 1)$. 
+We have a *ground truth* $\theta \sim \text{Ber}(q)$, which the agents are trying to learn.
+Each agent $v$ has some private information $s_v$, which can have values 0 or 1, such that $\text{Pr}[s_v = 1 \;|\; \theta = 1] = \text{Pr}[s_v = 0 \;|\; \theta = 0] = p$.
+The variables $\{s_v \;|\; v \in V\}$ are independent given $\theta$.
+Each agent $v$ makes a prediction $a_v$ of the ground truth according to a decision ordering, where predictions are based on both private information and the predictions of in-neighbors earlier in the ordering. 
+We denote the sequence of all private signals as $s = (s_v \;|\; v \in V)$.
+
+We consider a *Majority Dynamics* setting, where an agent $v$ in some given ordering $\sigma$ can see the neighbourhood $N = \{u \;|\; uv \in E \land \sigma(u) < \sigma(v) \}$, and chooses an action  $$
+    a_v = \begin{cases}
+        1 & \frac 1{|N|+1}(\sum_{n \in N} a_n + s_v) > \frac 12, \\
+        0 & \frac 1{|N|+1}(\sum_{n \in N} a_n + s_v) < \frac 12,\\
+        s_v & \text{otherwise.}
+    \end{cases}
+$$
+
+We are trying to decide, if it is hard to decide, whether there exists an ordering of the agents $\sigma$, such that the expected error they make is small, or in other words, $$
+		\mathbb{E}_{\theta, s} \left[ \frac{\sum_{v \in V}^{} {[a_v \neq \theta]}}{n} \right] < \varepsilon.
+$$
 
 ## Week log
 
