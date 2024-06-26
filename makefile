@@ -6,7 +6,7 @@ OUT_PAGES=$(addprefix $(OUT)/,$(PAGES))
 OUT_STATIC=$(addprefix $(OUT)/,$(STATIC))
 OUT_OTHER=$(addprefix $(OUT)/,$(OTHER))
 
-KATEX_PATH=/data/katex/
+KATEX_PATH=data/katex/
 OUT_KATEX=$(OUT)$(KATEX_PATH)
 KATEX_MEMBERS=katex/katex.min.css katex/katex.min.js katex/fonts
 
@@ -42,7 +42,7 @@ $(KATEX): $(OUT)$(KATEX_PATH)%:
 $(OUT_PAGES): $(OUT)/%.html: %.md $(ACTIVATE) $(OUT_KATEX)
 	cat "$<" | python -m preprocessors | pandoc - \
 		--citeproc \
-		--katex=$(KATEX_PATH) \
+		--katex \
 		--html-q-tags \
 		--standalone \
 		--css=style.css \
