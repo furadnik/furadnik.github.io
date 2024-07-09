@@ -45,7 +45,7 @@ The variables $\{s_v \;|\; v \in V\}$ are independent given $\theta$.
 Each agent $v$ makes a prediction $a_v$ of the ground truth according to a decision ordering, where predictions are based on both private information and the predictions of in-neighbors earlier in the ordering. 
 We denote the sequence of all private signals as $s = (s_v \;|\; v \in V)$.
 
-We consider a *Majority Dynamics* setting, where an agent $v$ in some given ordering $\sigma$ can see the neighbourhood $N = \{u \;|\; uv \in E \land \sigma(u) < \sigma(v) \}$, and chooses an action  $$
+We consider a *majority vote* setting, where an agent $v$ in some given ordering $\sigma$ can see the neighbourhood $N = \{u \;|\; uv \in E \land \sigma(u) < \sigma(v) \}$, and chooses an action  $$
     a_v = \begin{cases}
         1 & \frac 1{|N|+1}(\sum_{n \in N} a_n + s_v) > \frac 12, \\
         0 & \frac 1{|N|+1}(\sum_{n \in N} a_n + s_v) < \frac 12,\\
@@ -53,7 +53,7 @@ We consider a *Majority Dynamics* setting, where an agent $v$ in some given orde
     \end{cases}
 $$
 
-We are trying to decide, if it is hard to decide, whether there exists an ordering of the agents $\sigma$, such that the expected error they make is small, or in other words, $$
+The goal of our project is to find out, if it is NP-hard to decide, whether there exists an ordering of the agents $\sigma$, such that the expected error they make is small, or in other words, $$
 		\mathbb{E}_{\theta, s} \left[ \frac{\sum_{v \in V}^{} {[a_v \neq \theta]}}{n} \right] < \varepsilon.
 $$
 
