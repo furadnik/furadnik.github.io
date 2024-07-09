@@ -75,6 +75,25 @@ $$
     - I have started to work on a new problem concerning the comparison of Bayesian and Majority models.
     - We have further discussed adversarial approaches to the sequential learning setting.
 
+* _Week 4_: 06/17 --- 06/23
+    - We have discussed the proof of the complexity problem of deciding the optimal learning order with prof. Gao.
+    - I found (and then successfully removed, yay) a bug in our initial computation of probabilities.
+    - We have finished writeup of our complexity proof along with (messy) technical details with Amanda.
+
+* _Week 5_: 06/24 --- 06/30
+    - We discussed another setting of network learning, this time based on learning from crowds with prof. Gao.
+    - We did some minor edits of the writeup and sent it to the others to read.
+    - I've tried to prove that the expected learning rate is always better when using bayesian learning, compared to majority vote.
+    
+* _Week 6_: 07/01 --- 07/07
+    - We have discussed extending the proof to non-directed graphs without multi-edges.
+    - We have discussed the majority vs. bayesian problem, I have found a counterexample when adversarial players are present.
+    - I have examined the possibility of extending the proof to (still directed) graphs without multi-edges.
+    - I put together a script for computing the expected learning rate in an arbitrary network.
+    - I have found a construction which reduces 3-SAT to our problem without multi-edges, didn't have time to write it down fully, as it is involved and messy.
+
+* _Week 7_: 07/08 --- 07/14
+
 ## Acknowledgements
 
 <div id="eu_div"><img id="eu" src="data/eu.png"/></div>
