@@ -40,8 +40,8 @@ We denote the sequence of all private signals as $s = (s_v \;|\; v \in V)$.
 
 We consider a *majority vote* setting, where an agent $v$ in some given ordering $\sigma$ can see the neighbourhood $N = \{u \;|\; uv \in E \land \sigma(u) < \sigma(v) \}$, and chooses an action  $$
     a_v = \begin{cases}
-        1 & \frac 1{|N|+1}(\sum_{n \in N} a_n + s_v) > \frac 12, \\
-        0 & \frac 1{|N|+1}(\sum_{n \in N} a_n + s_v) < \frac 12,\\
+        1 & \frac 1{|N|+1}(\sum_{u \in N} a_u + s_v) > \frac 12, \\
+        0 & \frac 1{|N|+1}(\sum_{u \in N} a_u + s_v) < \frac 12,\\
         s_v & \text{otherwise.}
     \end{cases}
 $$
@@ -49,6 +49,8 @@ $$
 The goal of our project is to find out, if it is NP-hard to decide, whether there exists an ordering of the agents $\sigma$, such that the expected error they make is small, or in other words, $$
 		\mathbb{E}_{\theta, s} \left[ \frac{\sum_{v \in V}^{} {[a_v \neq \theta]}}{n} \right] < \varepsilon.
 $$
+
+For further details, see our [final presentation](data/final_prez.pdf).
 
 ## Week log
 
@@ -69,12 +71,12 @@ $$
     - We have further discussed adversarial approaches to the sequential learning setting.
 
 * _Week 4_: 06/17--06/23
-    - We have discussed the proof of the complexity problem of deciding the optimal learning order with prof. Gao.
+    - We have discussed the proof of the complexity problem of deciding the optimal learning order with Prof. Gao.
     - I found (and then successfully removed, yay) a bug in our initial computation of probabilities.
     - We have finished writeup of our complexity proof along with (messy) technical details with Amanda.
 
 * _Week 5_: 06/24--06/30
-    - We discussed another setting of network learning, this time based on learning from crowds with prof. Gao.
+    - We discussed another setting of network learning, this time based on learning from crowds with Prof. Gao.
     - We did some minor edits of the writeup and sent it to the others to read.
     - I've tried to prove that the expected learning rate is always better when using bayesian learning, compared to majority vote.
     
@@ -97,6 +99,8 @@ $$
     - We made the [final presentation](data/final_prez.pdf).
     - We discussed the generalization of our proof for other settings.
     - We considered notation in our paper.
+    - We gave the [final presentation](data/final_prez.pdf).
+    - I worked on reports for both DIMACS and CoSP.
 
 ## Acknowledgements
 
