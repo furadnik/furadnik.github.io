@@ -102,6 +102,11 @@ For further details, see our [final presentation](data/final_prez.pdf).
     - We gave the [final presentation](data/final_prez.pdf).
     - I worked on reports for both DIMACS and CoSP.
 
+* _Week 9_: 07/22--07/28
+    - I continued to work on the final DIMACS report.
+    - I made and gave a [presentation](https://github.com/furadnik/reu_prez/releases/tag/latest) on Cooperative Game Theory, as a part of the REU Student Workshop seminar in Prague.
+    - I attended lectures, which were a part of the REU program at Charles University in Prague.
+
 ## Acknowledgements
 
 <div id="eu_div"><img id="eu" src="data/eu.png"/></div>
