@@ -51,11 +51,10 @@ $(OUT_PAGES): $(OUT)/%.html: %.md $(ACTIVATE) $(OUT_KATEX)
 
 $(OUT)/style.css: $(ACTIVATE) style.css
 	cat style.css \
-		| sed 's/#00796b/$(shell $(HUE) .5)/' \
-		| sed 's/#48a999/$(shell $(HUE) .6 .81)/' \
-		| sed 's/#00251a/$(shell $(HUE) .15)/' \
-		| sed 's/#00796b/$(shell $(HUE) .37)/' \
-		| sed 's/#fafbfc/$(shell $(HUE) 1 .018)/' \
+		| sed 's/#00796b/$(shell $(HUE) .7)/' \ # linky + accent?
+		| sed 's/#48a999/$(shell $(HUE) .8 .81)/' \ # link hover
+		| sed 's/#00251a/$(shell $(HUE) .21)/' \ # nadpisy
+		| sed 's/#fafbfc/$(shell $(HUE) 1 .018)/' \ # background
 		> $(OUT)/style.css
 
 clean:
