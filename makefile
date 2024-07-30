@@ -7,13 +7,8 @@ OUT_PAGES=$(addprefix $(OUT)/,$(PAGES))
 OUT_STATIC=$(addprefix $(OUT)/,$(STATIC))
 OUT_OTHER=$(addprefix $(OUT)/,$(OTHER))
 
-<<<<<<< HEAD
-KATEX_PATH=/data/katex
-OUT_KATEX=$(OUT)$(KATEX_PATH)
-=======
 KATEX_PATH=data/katex
 OUT_KATEX=$(OUT)/$(KATEX_PATH)
->>>>>>> 3de91ca (fix: build)
 KATEX_MEMBERS=katex/katex.min.css katex/katex.min.js katex/fonts
 
 VENV=.venv
