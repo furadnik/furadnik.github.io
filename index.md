@@ -1,28 +1,21 @@
 ---
 pagetitle: REU 2024
 lang: en
-<<<<<<< HEAD
-bibliography: my_papers.bib
-nocite: '@*'
-=======
 bibliography: references.bib
 link-citations: true
->>>>>>> 9089e0f (Add proper references.)
 ---
+
 <div id="profilepic_div"><img id="profilepic" src="data/profile_pic.jpg"/></div>
 # Filip&nbsp;Úradník
 I'm a Bachelor student of Computer Science at&nbsp;[MFF&nbsp;UK](https://mff.cuni.cz/).
 For more info about me, take a look at&nbsp;my&nbsp;CV, either in&nbsp;[Czech](https://github.com/furadnik/cv/releases/download/latest/uradnik_cv_cz.pdf)
 or&nbsp;[English](https://github.com/furadnik/cv/releases/download/latest/uradnik_cv_en.pdf), or&nbsp;visit my&nbsp;[personal&nbsp;website](https://furadnik.github.io/).
 
-<<<<<<< HEAD
 At [REU 2024](https://reu.dimacs.rutgers.edu/2024/), I work on _Truth Learning in a Social and Adversarial Setting_ with&nbsp;[Julia Križanová](https://reu.dimacs.rutgers.edu/~jk2238/), [Rhett Olson](https://reu.dimacs.rutgers.edu/~ro330/) and [Amanda Wang](https://reu.dimacs.rutgers.edu/~aw1115/).\
 Our mentor is professor [Jie Gao](https://sites.rutgers.edu/jie-gao/about/).
 
 _I am currently attending the [Research Experience for Undergraduates](https://reu.dimacs.rutgers.edu/) program at Rutgers University. See the [details of my project](https://reu.dimacs.rutgers.edu/~fu37/)._
 
-=======
->>>>>>> 856ed63 (feat: make project more visible)
 ## Contact me
 
 My office is in the CoRE building, room 434.
@@ -59,40 +52,51 @@ $$
 
 ## Week log
 
-* _Week 1_: 05/29 --- 06/02
+* _Week 1_: 05/29--06/02
     - I did research about information cascades and voting [@easley2010networks].
     - I created a website for this project.
     - I started working on the [initial presentation](data/initial_prez.pdf) of the project.
 
-* _Week 2_: 06/03 --- 06/09
+* _Week 2_: 06/03--06/09
     - We have finished and given the [initial presentation](data/initial_prez.pdf).
     - I have read a paper about complexity of a decision process in a similar model to ours [@hazla2019reasoning].
     - We have discussed a statement of a complexity problem regarding optimal learning order.
     - I have started to work on a proof of the complexity problem regarding optimal learning order.
 
-* _Week 3_: 06/10 --- 06/16
+* _Week 3_: 06/10--06/16
     - We have discussed the proof of the complexity problem of deciding the optimal learning order with Kevin Lu.
     - I have started to work on a new problem concerning the comparison of Bayesian and Majority models.
     - We have further discussed adversarial approaches to the sequential learning setting.
 
-* _Week 4_: 06/17 --- 06/23
+* _Week 4_: 06/17--06/23
     - We have discussed the proof of the complexity problem of deciding the optimal learning order with prof. Gao.
     - I found (and then successfully removed, yay) a bug in our initial computation of probabilities.
     - We have finished writeup of our complexity proof along with (messy) technical details with Amanda.
 
-* _Week 5_: 06/24 --- 06/30
+* _Week 5_: 06/24--06/30
     - We discussed another setting of network learning, this time based on learning from crowds with prof. Gao.
     - We did some minor edits of the writeup and sent it to the others to read.
     - I've tried to prove that the expected learning rate is always better when using bayesian learning, compared to majority vote.
     
-* _Week 6_: 07/01 --- 07/07
+* _Week 6_: 07/01--07/07
     - We have discussed extending the proof to non-directed graphs without multi-edges.
     - We have discussed the majority vs. bayesian problem, I have found a counterexample when adversarial players are present.
     - I have examined the possibility of extending the proof to (still directed) graphs without multi-edges.
     - I put together a script for computing the expected learning rate in an arbitrary network.
     - I have found a construction which reduces 3-SAT to our problem without multi-edges, didn't have time to write it down fully, as it is involved and messy.
 
-* _Week 7_: 07/08 --- 07/14
+* _Week 7_: 07/08--07/14
+    - I have simplified the structure of the writeup.
+    - I started making some of the notation a bit clearer.
+    - I added bibliography to the writeup.
+    - I worked on the format of the writeup---adding the option to render it in the plain, IEEE, and AAMAS format. 
+    - We have discussed the possibilities of publishing our work.
+    - We have decided that we will give the final presentation together as a big group.
+
+* _Week 8_: 07/15--07/21
+    - We made the [final presentation](data/final_prez.pdf).
+    - We discussed the generalization of our proof for other settings.
+    - We considered notation in our paper.
 
 ## Acknowledgements
 
