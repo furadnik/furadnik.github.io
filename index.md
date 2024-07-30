@@ -11,11 +11,6 @@ I'm a Bachelor student of Computer Science at&nbsp;[MFF&nbsp;UK](https://mff.cun
 For more info about me, take a look at&nbsp;my&nbsp;CV, either in&nbsp;[Czech](https://github.com/furadnik/cv/releases/download/latest/uradnik_cv_cz.pdf)
 or&nbsp;[English](https://github.com/furadnik/cv/releases/download/latest/uradnik_cv_en.pdf), or&nbsp;visit my&nbsp;[personal&nbsp;website](https://furadnik.github.io/).
 
-At [REU 2024](https://reu.dimacs.rutgers.edu/2024/), I work on _Truth Learning in a Social and Adversarial Setting_ with&nbsp;[Julia Križanová](https://reu.dimacs.rutgers.edu/~jk2238/), [Rhett Olson](https://reu.dimacs.rutgers.edu/~ro330/) and [Amanda Wang](https://reu.dimacs.rutgers.edu/~aw1115/).\
-Our mentor is professor [Jie Gao](https://sites.rutgers.edu/jie-gao/about/).
-
-_I am currently attending the [Research Experience for Undergraduates](https://reu.dimacs.rutgers.edu/) program at Rutgers University. See the [details of my project](https://reu.dimacs.rutgers.edu/~fu37/)._
-
 ## Contact me
 
 My office is in the CoRE building, room 434.
