@@ -38,7 +38,7 @@ The variables $\{s_v \;|\; v \in V\}$ are independent given $\theta$.
 Each agent $v$ makes a prediction $a_v$ of the ground truth according to a decision ordering, where predictions are based on both private information and the predictions of in-neighbors earlier in the ordering. 
 We denote the sequence of all private signals as $s = (s_v \;|\; v \in V)$.
 
-We consider a *majority vote* setting, where an agent $v$ in some given ordering $\sigma$ can see the neighbourhood $N = \{u \;|\; uv \in E \land \sigma(u) < \sigma(v) \}$, and chooses an action  $$
+We consider a *majority vote* setting, where an agent $v$ in some given ordering $\sigma$ can see the neighborhood $N = \{u \;|\; uv \in E \land \sigma(u) < \sigma(v) \}$, and chooses an action  $$
     a_v = \begin{cases}
         1 & \frac 1{|N|+1}(\sum_{u \in N} a_u + s_v) > \frac 12, \\
         0 & \frac 1{|N|+1}(\sum_{u \in N} a_u + s_v) < \frac 12,\\
@@ -73,25 +73,25 @@ For further details, see our [final presentation](data/final_prez.pdf).
 * _Week 4_: 06/17--06/23
     - We have discussed the proof of the complexity problem of deciding the optimal learning order with Prof. Gao.
     - I found (and then successfully removed, yay) a bug in our initial computation of probabilities.
-    - We have finished writeup of our complexity proof along with (messy) technical details with Amanda.
+    - We have finished write-up of our complexity proof along with (messy) technical details with Amanda.
 
 * _Week 5_: 06/24--06/30
     - We discussed another setting of network learning, this time based on learning from crowds with Prof. Gao.
-    - We did some minor edits of the writeup and sent it to the others to read.
-    - I've tried to prove that the expected learning rate is always better when using bayesian learning, compared to majority vote.
+    - We did some minor edits of the write-up and sent it to the others to read.
+    - I've tried to prove that the expected learning rate is always better when using Bayesian learning, compared to majority vote.
     
 * _Week 6_: 07/01--07/07
     - We have discussed extending the proof to non-directed graphs without multi-edges.
-    - We have discussed the majority vs. bayesian problem, I have found a counterexample when adversarial players are present.
+    - We have discussed the majority vs. Bayesian problem, I have found a counterexample when adversarial players are present.
     - I have examined the possibility of extending the proof to (still directed) graphs without multi-edges.
     - I put together a script for computing the expected learning rate in an arbitrary network.
     - I have found a construction which reduces 3-SAT to our problem without multi-edges, didn't have time to write it down fully, as it is involved and messy.
 
 * _Week 7_: 07/08--07/14
-    - I have simplified the structure of the writeup.
+    - I have simplified the structure of the write-up.
     - I started making some of the notation a bit clearer.
-    - I added bibliography to the writeup.
-    - I worked on the format of the writeup---adding the option to render it in the plain, IEEE, and AAMAS format. 
+    - I added bibliography to the write-up.
+    - I worked on the format of the write-up---adding the option to render it in the plain, IEEE, and AAMAS format. 
     - We have discussed the possibilities of publishing our work.
     - We have decided that we will give the final presentation together as a big group.
 
@@ -107,7 +107,7 @@ For further details, see our [final presentation](data/final_prez.pdf).
     - I made and gave a [presentation](https://github.com/furadnik/reu_prez/releases/tag/latest) on Cooperative Game Theory, as a part of the REU Student Workshop seminar in Prague.
     - I attended lectures, which were a part of the REU program at Charles University in Prague.
 
-## Acknowledgements
+## Acknowledgments
 
 <div id="eu_div"><img id="eu" src="data/eu.png"/></div>
 This project has received funding from the European Union’s Horizon 2020 research and innovation programme under the Marie Skłodowska-Curie grant agreement No 823748.
