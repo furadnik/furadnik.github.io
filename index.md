@@ -45,7 +45,7 @@ The goal of our project is to find out, if it is NP-hard to decide, whether ther
 		\mathbb{E}_{\theta, s} \left[ \frac{\sum_{v \in V}^{} {[a_v \neq \theta]}}{n} \right] < \varepsilon.
 $$
 
-For further details, see our [final presentation](data/final_prez.pdf).
+<!-- For further details, see our [final presentation](data/final_prez.pdf). -->
 
 ## Week log
 
@@ -91,10 +91,12 @@ For further details, see our [final presentation](data/final_prez.pdf).
     - We have decided that we will give the final presentation together as a big group.
 
 * _Week 8_: 07/15--07/21
-    - We made the [final presentation](data/final_prez.pdf).
+    <!-- - We made the [final presentation](data/final_prez.pdf). -->
+    - We made the final presentation.
     - We discussed the generalization of our proof for other settings.
     - We considered notation in our paper.
-    - We gave the [final presentation](data/final_prez.pdf).
+    <!-- - We gave the [final presentation](data/final_prez.pdf). -->
+    - We gave the final presentation.
     - I worked on reports for both DIMACS and CoSP.
 
 * _Week 9_: 07/22--07/28
