@@ -55,9 +55,9 @@ $(OUT_PAGES): $(OUT)/%.html: %.md $(ACTIVATE) $(OUT_KATEX)
 # background
 $(OUT)/style.css: $(ACTIVATE) style.css
 	cat style.css \
-		| sed 's/#00796b/$(shell $(HUE) .65)/' \
-		| sed 's/#48a999/$(shell $(HUE) .75 .81)/' \
-		| sed 's/#00251a/$(shell $(HUE) .18)/' \
+		| sed 's/#00796b/$(shell $(HUE) .65 --min_contrast AAA)/' \
+		| sed 's/#48a999/$(shell $(HUE) .75 .81 --min_contrast AAA)/' \
+		| sed 's/#00251a/$(shell $(HUE) .18 --min_contrast AAA)/' \
 		| sed 's/#fafbfc/$(shell $(HUE) 1 .018)/' \
 		> $(OUT)/style.css
 
