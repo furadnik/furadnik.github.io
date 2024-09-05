@@ -1,6 +1,6 @@
 CITEPROC=--citeproc
 OUT=site
-PAGES=index.html notes.html
+PAGES=index.html notes.html $(patsubst %.md,%.html,$(shell find projects -type f -name '*.md'))
 STATIC=$(shell find data -type f) favicon.ico
 OTHER=style.css
 OUT_PAGES=$(addprefix $(OUT)/,$(PAGES))
@@ -37,6 +37,7 @@ $(OUT_KATEX): %:
 	rm -rf katex_tmp
 
 $(OUT_PAGES): $(OUT)/%.html: %.md $(ACTIVATE) $(OUT_KATEX)
+	mkdir -p "$$(dirname "$@")"
 	cat "$<" | python -m preprocessors | pandoc - \
 		$(CITEPROC) \
 		--katex=$(KATEX_PATH)/ \
@@ -70,4 +71,4 @@ upload: all
 	web_upload 
 
 # I want the notes updated always, because they rely on online content.
-.PHONY: all copy_out
+.PHONY: all copy_out $(OUT)/projects/index.html $(OUT)/notes.html
