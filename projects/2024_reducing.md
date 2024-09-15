@@ -13,7 +13,7 @@ This paper was co-authored by [David Sychrovský](https://kam.mff.cuni.cz/~sychr
 It was accepted to the [23rd International Conference on Autonomous Agents and Multi-Agent Systems](https://www.aamas2024-conference.auckland.ac.nz/) in Auckland, New Zealand.
 
 The paper can be accessed in the Proceedings [here](https://www.ifaamas.org/Proceedings/aamas2024/pdfs/p1847.pdf).
-However, we recommend getting the paper from [arXiv](https://arxiv.org/abs/2402.01930), in which we fixed some minor mistakes:
+However, we recommend getting the version from [arXiv](https://arxiv.org/abs/2402.01930), in which we fixed some minor mistakes:
 
 1. The error bars were changed to be the _standard error of the mean_, as is more common in literature (previously was the standard deviation of the values).
 2. A typo was fixed in the statement of Proposition 3.4 (an extra $-v(N)$ after the second equals sign).
