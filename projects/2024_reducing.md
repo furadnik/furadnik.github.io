@@ -9,7 +9,7 @@ In this paper, we investigate how to minimize the amount of information we
 learn about a cooperative game, while getting an accurate estimation of the
 Shapley value.
 
-This paper was co-authored by [David Sychrovský](https://kam.mff.cuni.cz/~sychrovsky/), [Jakub Černý](https://www.cernyjakub.com/) and [Martin Černý](https://kam.mff.cuni.cz/~cerny/).
+This paper was written by me, [David Sychrovský](https://kam.mff.cuni.cz/~sychrovsky/), [Jakub Černý](https://www.cernyjakub.com/) and [Martin Černý](https://kam.mff.cuni.cz/~cerny/).
 It was accepted to the [23rd International Conference on Autonomous Agents and Multi-Agent Systems](https://www.aamas2024-conference.auckland.ac.nz/) in Auckland, New Zealand.
 
 The paper can be accessed in the Proceedings [here](https://www.ifaamas.org/Proceedings/aamas2024/pdfs/p1847.pdf).
