@@ -1,6 +1,6 @@
 CITEPROC=--citeproc
 OUT=site
-PAGES=index.html notes.html $(patsubst %.md,%.html,$(shell find projects -type f -name '*.md'))
+PAGES=index.html notes.html pgp.html $(patsubst %.md,%.html,$(shell find projects -type f -name '*.md'))
 STATIC=$(shell find data -type f) favicon.ico
 OTHER=style.css
 OUT_PAGES=$(addprefix $(OUT)/,$(PAGES))
