@@ -1,3 +1,7 @@
+---
+pagetitle: PGP Key
+lang: en
+---
 # PGP Key
 
 Here is an up-to-date information about my PGP key. 
