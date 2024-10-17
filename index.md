@@ -6,7 +6,7 @@ nocite: '@*'
 ---
 <div id="profilepic_div"><img id="profilepic" src="data/profile_pic.jpg"/></div>
 # Filip&nbsp;Úradník
-Hi there! I'm a Bachelor student of Computer Science at&nbsp;[MFF&nbsp;UK](https://mff.cuni.cz/).
+Hi there! I'm a Masters student of Computer Science at&nbsp;[MFF&nbsp;UK](https://mff.cuni.cz/).
 
 <!-- In my spare time, I also help organise [Kasiopea](https://kasiopea.matfyz.cz/uvod/). -->
 
