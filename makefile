@@ -1,4 +1,5 @@
 CITEPROC=--citeproc
+CITE_CSL=https://www.zotero.org/styles/apa-cv?source=1
 OUT=site
 PAGES=index.html notes.html pgp.html $(patsubst %.md,%.html,$(shell find projects -type f -name '*.md'))
 STATIC=$(shell find data -type f) favicon.ico
@@ -40,6 +41,7 @@ $(OUT_PAGES): $(OUT)/%.html: %.md $(ACTIVATE) $(OUT_KATEX)
 	mkdir -p "$$(dirname "$@")"
 	cat "$<" | python -m preprocessors | pandoc - \
 		$(CITEPROC) \
+		--csl=$(CITE_CSL) \
 		--katex=$(KATEX_PATH)/ \
 		--html-q-tags \
 		--standalone \
