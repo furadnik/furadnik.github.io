@@ -1,5 +1,5 @@
 CITEPROC=--citeproc
-CITE_CSL=https://www.zotero.org/styles/apa-cv?source=1
+CITE_CSL=https://www.zotero.org/styles/ieee?source=1
 OUT=site
 PAGES=index.html notes.html pgp.html $(patsubst %.md,%.html,$(shell find projects -type f -name '*.md'))
 STATIC=$(shell find data -type f) favicon.ico
