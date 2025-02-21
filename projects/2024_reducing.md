@@ -12,6 +12,8 @@ Shapley value.
 This paper was written by me, [David Sychrovský](https://kam.mff.cuni.cz/~sychrovsky/), [Jakub Černý](https://www.cernyjakub.com/) and [Martin Černý](https://kam.mff.cuni.cz/~cerny/).
 It was accepted to the [23rd International Conference on Autonomous Agents and Multi-Agent Systems](https://www.aamas2024-conference.auckland.ac.nz/) in Auckland, New Zealand.
 
+For this paper, I received the [Prize of Jirka Matoušek](https://www.mff.cuni.cz/en/kam/research/prize-of-jirka-matousek) 2024.
+
 The paper can be accessed in the Proceedings [here](https://www.ifaamas.org/Proceedings/aamas2024/pdfs/p1847.pdf).
 However, we recommend getting the version from [arXiv](https://arxiv.org/abs/2402.01930), in which we fixed some minor mistakes:
 
