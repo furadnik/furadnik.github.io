@@ -61,7 +61,7 @@ $(OUT)/style.css: $(ACTIVATE) style.css
 		| sed 's/#00796b/$(shell $(HUE) .68 --min_contrast AAA)/' \
 		| sed 's/#48a999/$(shell $(HUE) .78 .81 --min_contrast AAA)/' \
 		| sed 's/#00251a/$(shell $(HUE) .18 --min_contrast AAA)/' \
-		| sed 's/#fafbfc/$(shell $(HUE) 1 .012)/' \
+		| sed 's/#fafbfc/$(shell $(HUE) 1 .006)/' \
 		> $(OUT)/style.css
 
 clean:
