@@ -53,9 +53,9 @@ def generate_project_list() -> str:
         projects_by_year[str(project.year)].append(project)
 
     ret = ""
-    for year, projects_for_year in projects_by_year.items():
+    for year, projects_for_year in sorted(projects_by_year.items(), reverse=True):
         ret += "\n".join([f"* {year}:"] + [
             f"\t* [{project.name}]({project.file_code})"
-            for project in projects_for_year
+            for project in sorted(projects_for_year, key=lambda p: (p.name, p.file_code))
         ]) + "\n\n"
     return ret
