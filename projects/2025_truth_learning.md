@@ -5,7 +5,7 @@ lang: en
 
 # Maximizing Truth Learning in a Social Network is NP-hard
 
-This paper is a continuation of my work at [REU 2024](/projects/2024_reu.html).
+This paper is a continuation of my work at [REU 2024](/projects/2024_reu).
 
 We look at the problem of truth learning with unreliable information in a social network.
 We analyze the complexity of deciding _how well_ a given network can learn.

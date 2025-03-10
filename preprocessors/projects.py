@@ -32,7 +32,7 @@ def get_project(project_path: Path) -> Project:
     return Project(
         name=metadata["pagetitle"],
         year=year,
-        file_code=project_path.name.replace(".md", ".html")
+        file_code=project_path.name.replace(".md", "")
     )
 
 
