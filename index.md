@@ -20,4 +20,5 @@ or&nbsp;[English](https://github.com/furadnik/cv/releases/download/latest/uradni
 
 ## Publications
 
-See my [Google Scholar](https://scholar.google.com/citations?user=7AvTiqgAAAAJ) profile.
+See my [Google Scholar](https://scholar.google.com/citations?user=7AvTiqgAAAAJ) profile for the full list.
+Note that underline indicates equal contribution.

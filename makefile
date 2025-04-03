@@ -43,6 +43,7 @@ $(OUT_PAGES): $(OUT)/%.html: %.md $(ACTIVATE) $(OUT_KATEX)
 		$(CITEPROC) \
 		--csl=$(CITE_CSL) \
 		--katex=$(KATEX_PATH)/ \
+		--lua-filter=authorship.lua \
 		--html-q-tags \
 		--standalone \
 		--css=/style.css \
