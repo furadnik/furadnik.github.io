@@ -28,7 +28,7 @@ return {
 		Div = function(div)
 			if div.identifier == "refs" then
 				-- apply refs_filter
-				div.content = pandoc.walk_block(div, refs_filter)
+				return div:walk(refs_filter)
 			end
 			return div
 		end
