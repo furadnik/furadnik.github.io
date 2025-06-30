@@ -15,4 +15,4 @@ For more information, see the REU website.
 This paper was written by me and [Amanda Wang](https://reu.dimacs.rutgers.edu/~aw1115/) with equal contribution, and by [Jie Gao](https://sites.rutgers.edu/jie-gao/about/).
 It was accepted to the [24th International Conference on Autonomous Agents and Multi-Agent Systems](https://aamas2025.org/) in Detroit, United States.
 
-This paper is currently available as a preprint at [arXiv](https://arxiv.org/abs/2502.12704).
+The paper can be accessed in the Proceedings [here](https://www.ifaamas.org/Proceedings/aamas2025/pdfs/p2078.pdf), as well as on [arXiv](https://arxiv.org/abs/2502.12704).
