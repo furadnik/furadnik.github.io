@@ -52,6 +52,6 @@ a:hover {
 @media (min-width: 768px) {
     #profilepic {
         float: right;
-        margin: 0;
+        margin: 18px;
     }
 }

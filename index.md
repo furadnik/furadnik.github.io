@@ -11,7 +11,7 @@ I am a master's student in computer science at the [Faculty of Mathematics and P
 Though I usually prefer purely theoretical projects, I also enjoy projects that blend theory and application.
 I am passionate about free and open source software and all things Neovim.
 
-For more information, see&nbsp;my&nbsp;CV, either in&nbsp;[Czech](https://github.com/furadnik/cv/releases/download/latest/uradnik_cv_cz.pdf)
+For more information, see my&nbsp;CV, either in&nbsp;[Czech](https://github.com/furadnik/cv/releases/download/latest/uradnik_cv_cz.pdf)
 or&nbsp;[English](https://github.com/furadnik/cv/releases/download/latest/uradnik_cv_en.pdf).
 
 ## Contact me
