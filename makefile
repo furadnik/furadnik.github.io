@@ -1,3 +1,4 @@
+SHELL=/usr/bin/bash -o pipefail
 CITEPROC=--citeproc
 CITE_CSL=index_csl.csl
 OUT=site
