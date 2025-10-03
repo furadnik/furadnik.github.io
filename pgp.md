@@ -4,7 +4,7 @@ lang: en
 ---
 # PGP Key
 
-Here is an up-to-date information about my PGP key. 
+Here is up-to-date information about my PGP key. 
 Always remember to establish trust using orthogonal channels!
 
 * Key is available via [keys.openpgp.org](https://keys.openpgp.org/search?q=filip.uradnik9%40gmail.com).
