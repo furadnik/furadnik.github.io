@@ -199,7 +199,7 @@
       </group>
     </layout>
   </citation>
-  <bibliography hanging-indent="true" entry-spacing="0" line-spacing="1">
+  <bibliography hanging-indent="true" entry-spacing="1" line-spacing="1">
     <sort>
       <key macro="issued" sort="descending"/>
     </sort>
