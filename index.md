@@ -7,7 +7,7 @@ nocite: '@*'
 <div id="profilepic_div"><img id="profilepic" src="data/profile_pic.jpg"/></div>
 # Filip&nbsp;Úradník
 
-I am a master's student in computer science at the [Faculty of Mathematics and Physics, Charles University](https://www.mff.cuni.cz/en).
+I am a master's student of computer science at the [Faculty of Mathematics and Physics, Charles University](https://www.mff.cuni.cz/en).
 Though I usually prefer purely theoretical projects, I also enjoy projects that blend theory and application.
 I am passionate about free and open source software and all things Neovim.
 
