@@ -24,7 +24,7 @@ or&nbsp;[English](https://github.com/furadnik/cv/releases/download/latest/uradni
 
 ## Research
 
-I am interested in a wide array of topics, including reinforcement learning, game theory, combinatorics, and graph theory.
+I am interested in a wide array of topics, including graph theory, complexity, and cooperative game theory.
 
 See a list of my publications below.
 For more information, visit my [Google Scholar](https://scholar.google.com/citations?user=7AvTiqgAAAAJ) profile.
