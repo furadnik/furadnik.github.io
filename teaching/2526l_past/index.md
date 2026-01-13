@@ -17,9 +17,9 @@ Pokud máte jakékoliv otázky, neváhejte se ozvat buď osobně na cvičení, p
 
 Zde najdete ke každému cvičení seznam probraných témat, dokumenty s příklady, a domácí úkoly.
 Na cvičení nestihneme probrat všechny příklady, zbytek z nich může sloužit jako domácí opakování.
-Kdybyste chtěli probrat řešení nějakého příkladu, neváhejte se ozvat.
+Kdybyste chtěli probrat řešení nějakého příkladu, zeptejte se, rádi ho s Vámi probereme.
 
-{{cv_fill}}
+{{teaching_entry}}
 
 ## Zápočet
 
@@ -41,7 +41,6 @@ Plánujeme je cca v první třetině, druhé třetině, a na konci semestru.
 O testech se budeme snažit dát vědět alespoň 2 týdny dopředu.
 
 Pro získání zápočtu je potřeba **z testů celkem získat alespoň 50 % bodů.**
-Případný nedostatek bodů budeme řešit individuálně na konci semestru.
 
 ### Statistická práce
 
