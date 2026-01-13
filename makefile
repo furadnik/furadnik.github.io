@@ -2,7 +2,7 @@ SHELL=/usr/bin/bash -o pipefail
 CITEPROC=--citeproc
 CITE_CSL=index_csl.csl
 OUT=site
-PAGES=index.html notes.html pgp.html $(patsubst %.md,%.html,$(shell find projects teaching -type f -name '*.md'))
+PAGES=index.html notes.html pgp.html $(patsubst %.md,%.html,$(shell find projects -type f -name '*.md') $(shell find teaching -maxdepth 2 -type f -name '*.md'))
 STATIC=$(shell find data -type f) favicon.ico
 OTHER=style.css
 OUT_PAGES=$(addprefix $(OUT)/,$(PAGES))
@@ -40,7 +40,7 @@ $(OUT_KATEX): %:
 
 $(OUT_PAGES): $(OUT)/%.html: %.md $(ACTIVATE) $(OUT_KATEX)
 	mkdir -p "$$(dirname "$@")"
-	cat "$<" | python -m preprocessors | pandoc - \
+	cat "$<" | python -m preprocessors --current_file "$<" --output_dir "$(OUT)" | pandoc - \
 		$(CITEPROC) \
 		--csl=$(CITE_CSL) \
 		--katex=$(KATEX_PATH)/ \
