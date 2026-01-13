@@ -40,7 +40,7 @@ $(OUT_KATEX): %:
 
 $(OUT_PAGES): $(OUT)/%.html: %.md $(ACTIVATE) $(OUT_KATEX)
 	mkdir -p "$$(dirname "$@")"
-	cat "$<" | python -m preprocessors | pandoc - \
+	cat "$<" | python -m preprocessors --current_file "$<" --output_dir "$(OUT)" | pandoc - \
 		$(CITEPROC) \
 		--csl=$(CITE_CSL) \
 		--katex=$(KATEX_PATH)/ \
