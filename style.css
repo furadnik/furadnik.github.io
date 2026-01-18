@@ -23,6 +23,7 @@ a {
 
 a:hover {
     color: #48a999;
+    text-decoration: underline;
 }
 
 #navbar {
