@@ -31,6 +31,9 @@ Zpravidla každý týden po cvičení zadáme domácí úkol.
 Domácí úkoly budou mít deadline dva týdny po zadání.
 Zadávání i odevzdávání domácích úkolů bude probíhat přes Sovu.
 
+Domácí úkoly určitě můžete probírat se svými spolužáky, samotná řešení ale musí být psána samostatně, a musíte jim rozumět.
+V řešeních nezapomeňte každý krok patřičně vysvětlit.
+
 Každý domácí úkol bude patřit do jedné ze čtyř *kategorií* -- pravděpodobnost, diskr. náhodné veličiny, spoj. náhodné veličiny, statistika.
 Pro získání zápočtu je potřeba **z každé kategorie získat alespoň 50 % bodů.**
 
