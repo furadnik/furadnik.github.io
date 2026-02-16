@@ -7,7 +7,7 @@ lang: cz
 
 V letním semestru 2025/2026 cvičím Pravděpodobnost a statistiku 1 spolu s [Júlií Križanovou](https://kam.mff.cuni.cz/~krizanova/).
 
-Cvičení je k [přednášce doc. Šámala](https://iuuk.mff.cuni.cz/~samal/vyuka/2526/PSt1/).
+Cvičení je k [přednášce R. Šámala a V. Rozhoně](https://iuuk.mff.cuni.cz/~samal/vyuka/2526/PSt1/).
 Koná se *ve čtvrtek ve 14:00 v učebně S7*.
 Účast na cvičení není podmínkou zápočtu.
 
@@ -34,8 +34,7 @@ Zadávání i odevzdávání domácích úkolů bude probíhat přes Sovu.
 Domácí úkoly určitě můžete probírat se svými spolužáky, samotná řešení ale musí být psána samostatně, a musíte jim rozumět.
 V řešeních nezapomeňte každý krok patřičně vysvětlit.
 
-Každý domácí úkol bude patřit do jedné ze čtyř *kategorií* -- pravděpodobnost, diskr. náhodné veličiny, spoj. náhodné veličiny, statistika.
-Pro získání zápočtu je potřeba **z každé kategorie získat alespoň 50 % bodů.**
+Pro získání zápočtu je potřeba **z domácích úkolů celkem získat alespoň 50 % bodů.**
 
 ### Testy
 
@@ -61,6 +60,7 @@ Práci odevzdávejte v Sově.
 * zdrojová data (nebo odkaz na ně),
 * program, který byl použit na získání výsledků.
 
-Deadline na statistickou práci je *15. září.*
-Úloha je hodnocena binárně -- splněno/nesplněno.
+Téma práce zapište do Sovy do *30. června.*
+Deadline na vypracování statistické práce je *15. září.*
+Práce je pak hodnocena binárně -- splněno/nesplněno.
 Pro získání zápočtu je potřeba **úlohu splnit.**
