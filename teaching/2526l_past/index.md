@@ -23,26 +23,28 @@ Kdybyste chtěli probrat řešení nějakého příkladu, zeptejte se, rádi ho 
 
 ## Zápočet
 
-Získání zápočtu má tři části: *domácí úkoly, testy, a statistickou práci*.
+Získání zápočtu má dvě části: získání dostatečného počtu *bodů za domácí úkoly a testy*, a vypracování *statistické práce*.
+Dohromady bude možné získat alespoň 150 bodů, ke získání zápočtu bude potřeba získat alespoň 100 bodů.
 
 ### Domácí úkoly
 
-Zpravidla každý týden po cvičení zadáme domácí úkol.
+Zpravidla každý týden bude zadán domácí úkol, typicky za 2--4 body, dohromady za alespoň 30 bodů.
 Domácí úkoly budou mít deadline dva týdny po zadání.
+
 Zadávání i odevzdávání domácích úkolů bude probíhat přes Sovu.
+Pro vstup do kurzu použijte token [`bcbe0fca05c2`](https://owl.mff.cuni.cz/join/bcbe0fca05c2).
 
 Domácí úkoly určitě můžete probírat se svými spolužáky, samotná řešení ale musí být psána samostatně, a musíte jim rozumět.
 V řešeních nezapomeňte každý krok patřičně vysvětlit.
-
-Pro získání zápočtu je potřeba **z domácích úkolů celkem získat alespoň 50 % bodů.**
 
 ### Testy
 
 Testy budou celkem tři, a budou se psát na cvičeních.
 Plánujeme je cca v první třetině, druhé třetině, a na konci semestru.
+Rozsahem budou cca na 45 minut.
 O testech se budeme snažit dát vědět alespoň 2 týdny dopředu.
 
-Pro získání zápočtu je potřeba **z testů celkem získat alespoň 50 % bodů.**
+Každý test bude za 60 bodů a počítat se budou dva nejlepší, dohromady tedy za testy bude možné získat 120 bodů.
 
 ### Statistická práce
 
@@ -63,4 +65,3 @@ Práci odevzdávejte v Sově.
 Téma práce zapište do Sovy do *30. června.*
 Deadline na vypracování statistické práce je *15. září.*
 Práce je pak hodnocena binárně -- splněno/nesplněno.
-Pro získání zápočtu je potřeba **úlohu splnit.**
