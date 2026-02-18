@@ -11,7 +11,7 @@ Cvičení je k [přednášce R. Šámala a V. Rozhoně](https://iuuk.mff.cuni.cz
 Koná se *ve čtvrtek ve 14:00 v učebně S7*.
 Účast na cvičení není podmínkou zápočtu.
 
-Pokud máte jakékoliv otázky, neváhejte se ozvat buď osobně na cvičení, přes Sovu, nebo e-mailem na [uradnik@kam.mff.cuni.cz](mailto:uradnik@kam.mff.cuni.cz) nebo [krizanova@kam.mff.cuni.cz](mailto:krizanova@kam.mff.cuni.cz).
+Pokud máte jakékoliv otázky, neváhejte se ozvat buď osobně na cvičení, přes Sovu, nebo e-mailem na [`uradnik@kam.mff.cuni.cz`](mailto:uradnik@kam.mff.cuni.cz) nebo [`krizanova@kam.mff.cuni.cz`](mailto:krizanova@kam.mff.cuni.cz).
 
 ## Co jsme dělali
 
