@@ -1,5 +1,6 @@
 *.html
-!base_{before,after}.html
+!base_{navbar,content,after}.html
 site
 .venv
 *.pyc
+.dmypy.json

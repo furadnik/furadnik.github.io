@@ -38,7 +38,7 @@ $(OUT_KATEX): %:
 	cp -rf -- $(addprefix katex_tmp/,$(KATEX_MEMBERS)) "$(OUT_KATEX)"
 	rm -rf katex_tmp
 
-$(OUT_PAGES): $(OUT)/%.html: %.md $(ACTIVATE) $(OUT_KATEX)
+$(OUT_PAGES): $(OUT)/%.html: %.md $(ACTIVATE) $(OUT_KATEX) base_before.html
 	mkdir -p "$$(dirname "$@")"
 	cat "$<" | python -m preprocessors --current_file "$<" --output_dir "$(OUT)" | pandoc - \
 		$(CITEPROC) \
@@ -66,6 +66,10 @@ $(OUT)/style.css: $(ACTIVATE) style.css
 		| sed 's/#fafbfc/$(shell $(HUE) 1 0)/' \
 		> $(OUT)/style.css
 
+# on some days, display a special header
+base_before.html: base_navbar.html base_content.html $(ACTIVATE)
+	$(PYTHON) -m preprocessors.special_header | cat base_navbar.html - base_content.html > base_before.html
+
 clean:
 	rm -rf $(OUT) || echo "didn't exist"
 	rm -rf notes.md || echo "didn't exist"
@@ -75,4 +79,4 @@ upload: all
 	web_upload 
 
 # I want the notes updated always, because they rely on online content.
-.PHONY: all copy_out $(OUT)/projects/index.html $(OUT)/notes.html
+.PHONY: all copy_out $(OUT)/projects/index.html $(OUT)/notes.html base_before.html
