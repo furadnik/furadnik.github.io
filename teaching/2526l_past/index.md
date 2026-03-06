@@ -41,10 +41,17 @@ V řešeních nezapomeňte každý krok patřičně vysvětlit.
 
 Testy budou celkem tři, a budou se psát na cvičeních.
 Plánujeme je cca v první třetině, druhé třetině, a na konci semestru.
-Rozsahem budou cca na 45 minut.
 O testech se budeme snažit dát vědět alespoň 2 týdny dopředu.
 
+Rozsahem budou na 45 minut.
+Při testech nebude možné jít na záchod, ani používat žádné pomůcky jako kalkulačky, mobily, atd.
+
 Každý test bude za 60 bodů a počítat se budou dva nejlepší, dohromady tedy za testy bude možné získat 120 bodů.
+Obsahovat budou typově podobné příklady jako byly na cvičení.
+Může se objevit i otázka např. na vysvětlení nějaké jednoduché definice z přednášky.
+
+* *1. test* proběhne **19. 3. 2026**, a bude pokrývat 1. až 3. cvičení.
+Náhodné veličiny se tam tedy ještě objevit můžou, střední hodnota už ne.
 
 ### Statistická práce
 
