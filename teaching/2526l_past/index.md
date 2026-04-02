@@ -52,7 +52,7 @@ Může se objevit i otázka např. na vysvětlení nějaké jednoduché definice
 
 * *1. test* proběhne **19. 3. 2026**, a bude pokrývat 1. až 3. cvičení.
 Náhodné veličiny se tam tedy ještě objevit můžou, střední hodnota už ne.
-* *2. test* proběhne **26. 4. 2026**, a bude pokrývat 4. až 7. cvičení.
+* *2. test* proběhne **16. 4. 2026**, a bude pokrývat 4. až 7. cvičení.
 Obecně se v něm může objevit cokoliv co jsme probírali o diskrétních náhodných veličinách.
 
 ### Statistická práce
