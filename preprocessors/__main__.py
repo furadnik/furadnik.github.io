@@ -1,9 +1,10 @@
 """Run all the preprocessors."""
+import re
 import sys
 from argparse import ArgumentParser
 from pathlib import Path
 
-from . import PREPROCESSORS, PREPROCESSORS_WITH_PATH
+from . import PREPROCESSORS, PREPROCESSORS_WITH_ARG, PREPROCESSORS_WITH_PATH
 
 PARSER = ArgumentParser(
     description="Run all the preprocessors. Reads from stdin, but needs the input path and output path for some preprocessors."
@@ -18,6 +19,10 @@ def main(current_file: Path | None = None, output_dir: Path | None = None) -> No
     for key, generator in PREPROCESSORS.items():
         while key in text:
             text = text.replace(key, generator(), 1)
+
+    for key, generator in PREPROCESSORS_WITH_ARG.items():
+        text = re.sub(r'\{\{' + key + r':(.+?)\}\}', lambda m: generator(m.group(1)), text)
+
     for key, generator in PREPROCESSORS_WITH_PATH.items():
         while key in text:
             assert current_file is not None, f"Preprocessor {key} needs current_file"
