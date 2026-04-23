@@ -7,6 +7,7 @@ Expects the following structure:
             description.md
             hw.pdf
             ex.pdf
+            sol.pdf
 """
 from os import system
 from pathlib import Path
@@ -18,6 +19,7 @@ SINGLE_CONTENT = """
 FILE_MAPS = {
     "hw.pdf": ("domácí úkol", "past_du_{date}.pdf"),
     "ex.pdf": ("příklady", "past_cviceni_{date}.pdf"),
+    "sol.pdf": ("řešení", "past_reseni_{date}.pdf"),
 }
 
 
