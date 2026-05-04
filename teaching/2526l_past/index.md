@@ -54,6 +54,9 @@ Může se objevit i otázka např. na vysvětlení nějaké jednoduché definice
 Náhodné veličiny se tam tedy ještě objevit můžou, střední hodnota už ne.
 * *2. test* proběhne **16. 4. 2026**, a bude pokrývat 4. až 7. cvičení.
 Obecně se v něm může objevit cokoliv co jsme probírali o diskrétních náhodných veličinách.
+* *3. test* proběhne **14. 5. 2026**, a bude pokrývat 8. až 10. cvičení.
+Objevit se v něm můžou obecné náhodné veličiny, nerovnosti, zákony velkých čísel a centrální limitní věta.
+Statistika v testu nebude.
 
 ### Statistická práce
 
