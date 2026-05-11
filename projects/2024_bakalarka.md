@@ -14,3 +14,5 @@ The original version of the thesis can be found on the [Charles University Digit
 However, since then, some minor mistakes were discovered.
 I have fixed those, and the corrected version can be reached as the latest release on [Github](https://github.com/furadnik/bakalarka/releases/tag/latest).
 The Github repository also contains the source code with a record of all changes made since the submitted version.
+
+For this thesis, I received the [Prize of the Learned Society of the Czech Republic](https://www.learned.cz/cz/aktivity-spolecnosti/udalosti/ucena-spolecnost-udelila-medaile-a-ceny-za-rok-2026.html).
