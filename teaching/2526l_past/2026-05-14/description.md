@@ -1,0 +1,2 @@
+* Třetí test.
+* Testování hypotéz.
