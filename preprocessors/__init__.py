@@ -4,6 +4,7 @@ from .macros import email_macro
 from .projects import generate_project_list
 from .publications import generate_publications
 from .teaching_entry import render_sessions
+from .teaching_index import render_index
 from .upcoming import generate_upcoming
 
 PREPROCESSORS = {
@@ -15,6 +16,7 @@ PREPROCESSORS = {
 
 PREPROCESSORS_WITH_PATH = {
     "{{teaching_entry}}": render_sessions,
+    "{{teaching_index}}": render_index,
 }
 
 PREPROCESSORS_WITH_ARG = {
