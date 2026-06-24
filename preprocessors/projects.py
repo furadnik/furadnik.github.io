@@ -28,7 +28,7 @@ def get_project(project_path: Path) -> Project:
     assert project_details_path.exists()
     assert project_details_path.is_file()
     metadata = get_project_meta(project_details_path)
-    year = int(project_path.name.split("_")[0])
+    year = int(project_path.name.split("-")[0])
     return Project(
         name=metadata["pagetitle"],
         year=year,

@@ -1,7 +1,7 @@
 """A filter for filling out exercise sessions.
 
 Expects the following structure:
-    teaching/{semester}_{subject}/
+    teaching/{semester}-{subject}/
         index.md
         {yyyy}-{mm}-{dd}/
             description.md
