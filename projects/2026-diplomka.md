@@ -8,7 +8,7 @@ lang: en
 My Master thesis is titled _Reliability of Networks_, and it tackles the problem of finding a maximum flow in networks with random capacities.
 The thesis was supervised by [Prof. Martin Loebl](https://kam.mff.cuni.cz/~loebl/).
 
-The original version of the thesis can be found on the [Charles University Digital Repository](https://dspace.cuni.cz/browse?type=author&value=%C3%9Aradn%C3%ADk,%20Filip), or on [Github](https://github.com/furadnik/diplomka/releases/tag/official).
+The original version of the thesis can be found on the [Charles University Digital Repository](http://hdl.handle.net/20.500.11956/210162), or on [Github](https://github.com/furadnik/diplomka/releases/tag/official).
 Minor typos have been fixed in the [revised version on Github](https://github.com/furadnik/diplomka/releases/tag/latest).
 The Github repository also contains the source code with a record of all changes made since the submitted version.
 
