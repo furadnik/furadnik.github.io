@@ -9,4 +9,7 @@ There are (probably) many mistakes in them, so be careful.
 
 If you find a mistake, either write me a message, or [create an issue](https://gitlab.mff.cuni.cz/uradnikf/bc_lec/-/issues/new).
 
+The notes labeled with 🇨🇿 or 🇬🇧 are from my studies at Charles University, either in Czech or English.
+Those labeled with 🇩🇰 are from either my Erasmus or PhD studies at the University of Copenhagen (and they are also in English).
+
 {{notes}}

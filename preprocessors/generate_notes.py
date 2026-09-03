@@ -57,7 +57,16 @@ def unpack_semester_code(code: str) -> tuple[int, str]:
     return year, semester_type
 
 
-def get_subjects_for_semester(semester_notes_path: Path) -> Iterable[tuple[str, str, bool]]:
+def get_subject_lang(main: str) -> str:
+    """Return the language as emoji."""
+    if "} % ucph" in main:
+        return "🇩🇰"
+    if "\\input{english}\n" in main or "\\input{english.tex}\n" in main:
+        return "🇬🇧"
+    return "🇨🇿"
+
+
+def get_subjects_for_semester(semester_notes_path: Path) -> Iterable[tuple[str, str, str]]:
     """Get subjects for semester.
 
     Returns:
@@ -69,12 +78,12 @@ def get_subjects_for_semester(semester_notes_path: Path) -> Iterable[tuple[str, 
         subject_code = subject.name
         with open(subject / "main.tex") as f:
             main_tex = f.read()
-        subject_english = "\\input{english}\n" in main_tex or "\\input{english.tex}\n" in main_tex
+        subject_lang = get_subject_lang(main_tex)
         subject_name = main_tex.split("\\title{")[1].split("}")[0]
-        yield subject_code, subject_name, subject_english
+        yield subject_code, subject_name, subject_lang
 
 
-def get_semesters(notes_root: Path) -> Iterable[tuple[str, Iterable[tuple[str, str, bool]]]]:
+def get_semesters(notes_root: Path) -> Iterable[tuple[str, Iterable[tuple[str, str, str]]]]:
     """Get semesters."""
     for semester in notes_root.iterdir():
         if semester.name.startswith(".") or not semester.is_dir():
@@ -83,13 +92,12 @@ def get_semesters(notes_root: Path) -> Iterable[tuple[str, Iterable[tuple[str, s
         yield semester.name, subjects
 
 
-def format_semester(semester: str, subjects: Iterable[tuple[str, str, bool]]) -> str:
+def format_semester(semester: str, subjects: Iterable[tuple[str, str, str]]) -> str:
     """Format semester to html."""
     year, semester_type = unpack_semester_code(semester)
     formatted_subjects = "\n".join(
-        f'  - [{subject_name}]({BC_NOTES_URL.format(semester_code=semester, subject=subject_code)})'
-        f'{" [In&nbsp;English]" if subject_english else ""}'
-        for subject_code, subject_name, subject_english in sorted(subjects, key=lambda x: x[1])
+        f'  - [{subject_name}]({BC_NOTES_URL.format(semester_code=semester, subject=subject_code)}) {subject_lang}'
+        for subject_code, subject_name, subject_lang in sorted(subjects, key=lambda x: x[1])
     )
     if not formatted_subjects:
         return ""
