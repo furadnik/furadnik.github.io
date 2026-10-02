@@ -7,7 +7,7 @@ nocite: '@*'
 <div id="profilepic_div"><img id="profilepic" src="data/profile_pic.jpg"/></div>
 # Filip&nbsp;Úradník
 
-I am a PhD student at the [Department of Computer Science, University of Copenhagen](https://di.ku.dk/english/).
+I am a PhD student at the [BARC, University of Copenhagen](https://barc.ku.dk/).
 My supervisor is [Prof. Mikkel Thorup](https://hjemmesider.diku.dk/~mthorup/).
 I previously studied at the [Faculty of Mathematics and Physics, Charles University](https://www.mff.cuni.cz/en) under the supervision of [Prof. Martin Loebl](https://kam.mff.cuni.cz/~loebl/).
 
