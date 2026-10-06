@@ -59,6 +59,7 @@ a:hover {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 18%;
 }
 
 @media (min-width: 768px) {
