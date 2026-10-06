@@ -19,9 +19,9 @@ or&nbsp;[English](https://github.com/furadnik/cv/releases/download/latest/uradni
 
 ## Contact me
 
-* [Matrix](https://matrix.to/#/@furadnik:matrix.org)
-* [School Email](mailto:filip.uradnik@di.ku.dk)
-* [Personal Email](mailto:furadnik9@gmail.com)
+* [`@furadnik:matrix.org`](https://matrix.to/#/@furadnik:matrix.org)
+* {{email:furadnik9@gmail.com}} (personal email)
+* {{email:filip.uradnik@di.ku.dk}} (school email)
 
 {{upcoming}}
 
