@@ -39,6 +39,8 @@ a:hover {
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 18px;
+    padding-left: 30px;
+    padding-right: 30px;
     max-width: var(--max-width);
     text-align: center;
     overflow: hidden;
